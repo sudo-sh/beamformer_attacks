@@ -1,0 +1,54 @@
+{
+    "run_params":{
+        "num_snapshots" : 20,
+        "randomness" : 1,
+        "min_angle": -90,
+        "max_angle": 90,
+        "ant_placement": "y",
+        "run_itr" : 5000,
+        "save_path" : "Experiment_3"
+    },
+
+    "tx_params":{
+        "fc_top" : 61e9,
+        "fc_bot" : 60e9,
+        "n_tx" : 2,
+        "t_pulse": 16e-6,
+        "tx_power" : 15,
+        "prp" : 40e-6,
+        "n_pulses": 200
+
+    },
+
+    "rx_params":{
+        "f_samp" : 20e6,
+        "noise_figure" : 8,
+        "rf_gain" : 20,
+        "load_resistor" : 500,
+        "baseband_gain" : 30,
+        "n_rx" : 8
+    },
+
+    "target":{
+        "num_target" : 3,
+        "x_angle" : [40, -4, 60, 80],
+        "z_angle" : [0, 0, 0, 0],
+        "rcs" : [10, 10, 10, 10],
+        "x_speed": [-20, -20, 10, -25],
+        "y_speed": [0, 0, 0, 0],
+        "z_speed": [0, 0, 0, 0],
+        "dist": [10, 40, 10, 15],
+        "phase": [0, 0, 0, 0]
+
+    },
+
+    "hyper_params":{
+        "peak_thresh" : 5,
+        "range_tol" : 5
+    }
+
+
+
+
+
+}
